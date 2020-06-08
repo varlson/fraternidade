@@ -1,0 +1,129 @@
+				/*GERAL*/
+bdy{
+	font-family: 'Roboto', 'sans-serif'
+}
+
+a{color: white;}
+.row{
+	margin: 0;
+}
+.container{
+	padding:0;
+}
+
+/*NAVBAR*/
+.home{background-image: url(home.png);}
+.about{background-image: url(about.png);}
+.donate{background-image: url(donate.png);}
+.contact{background-image: url(contact.png);}
+
+.nav-item-size{
+	height: 65px;
+	width: 40px;
+	/*background-color: white;*/
+	background-repeat: no-repeat;
+	background-position: center 2px;
+	background-size: 100% 40px;
+	display: grid;
+	align-content: end;
+	justify-content: center;
+	padding-bottom: 0;
+	padding-top: 3px;
+	font-size: 14px;
+}
+
+.borda{border-bottom: 1px solid white;}
+
+header,.navbar{
+
+	
+	color: white;
+}
+#navItem a{color: #FFF;}
+#navItem a:hover{text-decoration: underline; color: lightgrey}
+
+.navbar-brand span{ color: #FFF; }
+
+		/*CORES DE BACGROUNDS */
+
+.bg_dark{background-color: rgba(69, 79, 84, 1)}
+.bg_dark_transparent{background-color: rgba(53, 61, 65, .7)}
+.bg_dark_light{background-color: rgba(80, 92, 98, 1)}
+.bg_blue{ background-color: #000080;}
+.bg_blue_light{background-color: rgba(87, 120, 173, 1);}
+.bg_dark_teste{background-color: #d6d8d9;}
+
+
+
+/*FIM DOS BACKGROUNDs*/
+
+
+
+
+
+		/*CAROUSEL*/
+.carousel-inner{
+
+	/*height: 80vh;*/
+	/*background-color: transparent;*/
+}
+.carousel-item, .carousel-inner{
+	height: 70vh;
+}
+
+
+@media screen and (max-width: 700px) {
+  .carousel-caption h3{
+	font-size: 1rem;
+  }
+
+  .card-title{
+  	font-size: 1.2rem;
+  }
+  
+}
+.carousel-caption{
+	
+	margin-bottom: 3%;
+	border-radius: 15px;
+	color: #cccccc;
+}
+
+.carousel-caption:hover{
+	
+	color: white;
+	background-color: rgba(53, 61, 65, .9);
+	transition: all 1s;
+}
+
+.carousel-caption a{
+	position: absolute;
+	padding: 20px 30px;
+	background-color: transparent;
+	bottom: 2px;
+	background-image: url(here.svg);
+	background-size: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.carousel-caption a:hover{
+	background-color: rgba(80, 92, 98, .8);
+	/*padding: 10px;*/
+}
+
+.carousel-caption h3{
+	padding: 2px;
+}
+
+.carousel-control-prev:hover,.carousel-control-next:hover{
+	background-color: rgba(80, 92, 98, .3);
+}
+
+
+
+		/*CARD */
+.card img{
+	
+    height: 191.23px;
+}
