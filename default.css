@@ -72,7 +72,7 @@ header,.navbar{
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   .carousel-caption h3{
 	font-size: 1rem;
   }
@@ -81,6 +81,14 @@ header,.navbar{
   	font-size: 1.2rem;
   }
   
+  .carousel-item, .carousel-inner{
+	height: 50vh;
+}
+
+
+
+x
+
 }
 .carousel-caption{
 	
@@ -126,4 +134,27 @@ header,.navbar{
 .card img{
 	
     height: 191.23px;
+}
+
+
+	/*ATIVIDADES*/
+.list-group-item{
+
+	text-align: center;
+} /*END OF ATIVIDADES*/
+
+
+.logo-footer{
+
+	height: 200px;
+	width: 200px;
+	display: grid;
+	align-items: end;
+	background-image: url(logo.jpg);
+	background-position: cover;
+	background-size: 100% 80%;
+	background-repeat: no-repeat;
+	font-size: 1.8rem;
+	color: white;
+	text-shadow: 2px 2px 1px blue;
 }
