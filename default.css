@@ -1,4 +1,4 @@
-				/*GERAL*/
+/*GERAL*/
 bdy{
 	font-family: 'Roboto', 'sans-serif'
 }
@@ -36,7 +36,7 @@ a{color: white;}
 
 header,.navbar{
 
-	
+
 	color: white;
 }
 #navItem a{color: #FFF;}
@@ -44,7 +44,7 @@ header,.navbar{
 
 .navbar-brand span{ color: #FFF; }
 
-		/*CORES DE BACGROUNDS */
+/*CORES DE BACGROUNDS */
 
 .bg_dark{background-color: rgba(69, 79, 84, 1)}
 .bg_dark_transparent{background-color: rgba(53, 61, 65, .7)}
@@ -52,77 +52,62 @@ header,.navbar{
 .bg_blue{ background-color: #000080;}
 .bg_blue_light{background-color: rgba(87, 120, 173, 1);}
 .bg_dark_teste{background-color: #d6d8d9;}
-
-
-
 /*FIM DOS BACKGROUNDs*/
 
 
 
 
-
-		/*CAROUSEL*/
-.carousel-inner{
-
-	/*height: 80vh;*/
-	/*background-color: transparent;*/
-}
-.carousel-item, .carousel-inner{
-	height: 70vh;
+.carousel-item {
+  	height: 70vh;
+  	background-size: cover;
+  	background-position: center center;
+  	/*background-image: url(../img/welcome.jpg);*/
 }
 
-
-@media screen and (max-width: 500px) {
-  .carousel-caption h3{
-	font-size: 1rem;
-  }
-
-  .card-title{
-  	font-size: 1.2rem;
-  }
-  
-  .carousel-item, .carousel-inner{
-	height: 50vh;
+.carousel-item h4 {
+  	margin: 0;
+    color: white;
 }
 
+.sms{
 
-
-x
-
+	height: 20%;
+	width: 100%;
+	background-color: rgba(133, 77, 65, .5);
+	font-size: 2rem;
 }
-.carousel-caption{
-	
-	margin-bottom: 3%;
-	border-radius: 15px;
-	color: #cccccc;
-}
+.sms:hover{
 
-.carousel-caption:hover{
-	
-	color: white;
-	background-color: rgba(53, 61, 65, .9);
-	transition: all 1s;
-}
-
-.carousel-caption a{
-	position: absolute;
-	padding: 20px 30px;
 	background-color: transparent;
-	bottom: 2px;
-	background-image: url(here.svg);
-	background-size: 80%;
-	background-position: center;
+	color: white;
+	transition: all .5s;
+}
+.img_slide{
+	
+	background-size: 100% 100%;
+	background-position: 100% top;
 	background-repeat: no-repeat;
 }
 
-.carousel-caption a:hover{
-	background-color: rgba(80, 92, 98, .8);
-	/*padding: 10px;*/
+.um{background-image: url(welcome.jpg);}
+.dois{background-image: url(img1.jpg);}
+
+@media screen and (max-width: 500px) {
+	.carousel-caption h3{
+		font-size: 1rem;
+	}
+
+	.card-title{
+		font-size: 1.2rem;
+	}
+
+	.carousel-item, .carousel-inner{
+		height: 50vh;
+	}
 }
 
-.carousel-caption h3{
-	padding: 2px;
-}
+
+
 
 .carousel-control-prev:hover,.carousel-control-next:hover{
 	background-color: rgba(80, 92, 98, .3);
@@ -130,31 +115,57 @@ x
 
 
 
-		/*CARD */
+/*CARD */
 .card img{
-	
-    height: 191.23px;
+
+	height: 191.23px;
 }
 
 
-	/*ATIVIDADES*/
+/*ATIVIDADES*/
 .list-group-item{
 
 	text-align: center;
-} /*END OF ATIVIDADES*/
+	} /*END OF ATIVIDADES*/
 
 
-.logo-footer{
+	.logo-footer{
 
-	height: 200px;
-	width: 200px;
-	display: grid;
-	align-items: end;
-	background-image: url(logo.jpg);
-	background-position: cover;
-	background-size: 100% 80%;
-	background-repeat: no-repeat;
-	font-size: 1.8rem;
-	color: white;
-	text-shadow: 2px 2px 1px blue;
+		height: 200px;
+		width: 200px;
+		display: grid;
+		align-items: end;
+		background-image: url(logo.jpg);
+		background-position: cover;
+		background-size: 100% 80%;
+		background-repeat: no-repeat;
+		font-size: 1.8rem;
+		color: white;
+		text-shadow: 2px 2px 1px blue;
+	}
+
+	/*FOOTER*/
+
+	.addres .card img{
+
+	height: 40px;
+	width: 40px;
 }
+
+
+
+
+.social li{
+
+	height: 35px;
+	width: 35px;
+	/*background-color:red;*/
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: 90%;
+}
+
+.facebook{background-image: url(face.png);}
+.insta{background-image: url(insta.png);}
+.youtube{background-image: url(youtube.png);}
+.whatsapp{background-image: url(whatsapp.png);}
