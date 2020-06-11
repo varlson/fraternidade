@@ -52,6 +52,8 @@ header,.navbar{
 .bg_blue{ background-color: #000080;}
 .bg_blue_light{background-color: rgba(87, 120, 173, 1);}
 .bg_dark_teste{background-color: #d6d8d9;}
+.bg_dark_red{background-color: #854a36;}
+.bg-gradiant-grey{background-image: linear-gradient(#696e70, #879096, #9ba1a3);}
 /*FIM DOS BACKGROUNDs*/
 
 
@@ -101,8 +103,8 @@ header,.navbar{
 		font-size: 1.2rem;
 	}
 
-	.carousel-item, .carousel-inner{
-		height: 50vh;
+	.carousel-item a{
+		font-size: 1rem;
 	}
 }
 
@@ -123,10 +125,33 @@ header,.navbar{
 
 
 /*ATIVIDADES*/
+
+
 .list-group-item{
 
 	text-align: center;
-	} /*END OF ATIVIDADES*/
+	} 
+
+.atividades .list-group-item {
+    font-size: 1.5rem;
+    padding: 4px;
+}
+
+.atividades .list-group-item a:hover{
+    text-decoration: none;
+    color: #dadee0;
+}
+
+
+.tteste{
+	padding: 0;
+}
+.cronograma {
+   
+    width: 100%;
+}
+
+	/*END OF ATIVIDADES*/
 
 
 	.logo-footer{
@@ -152,10 +177,13 @@ header,.navbar{
 	width: 40px;
 }
 
+.container-fluid{
+   
+    padding: 0;
+}
 
 
-
-.social li{
+.social a{
 
 	height: 35px;
 	width: 35px;
@@ -163,9 +191,23 @@ header,.navbar{
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: 90%;
+	background-color: rgba(69, 79, 84, 1);
+}
+
+.social a:hover{
+	background-color: rgba(113, 122, 128, .5);
+}
+
+.addres .card .card-body {
+    padding: 6px;
 }
 
 .facebook{background-image: url(face.png);}
 .insta{background-image: url(insta.png);}
 .youtube{background-image: url(youtube.png);}
 .whatsapp{background-image: url(whatsapp.png);}
+
+.ttt{
+	width: 100%;
+	display: grid;
+}
