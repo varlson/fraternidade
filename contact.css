@@ -1,0 +1,102 @@
+/*IMG CONTACT*/
+
+
+
+
+
+
+@media screen and (max-width: 575px){
+
+	.form_contact{
+
+		height: auto;
+		width: 100%;
+	}
+}
+
+
+
+/*SMS-FORM*/
+
+input, textarea{
+
+	width: 100%;
+	padding: 12px;
+	background-color:#6fc6ea;
+}
+
+
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+/*BACKGROUNDS*/
+.bg-grey{background-color: #c4c4c4;}
+.bg_grad{background-color: #ac9f9f;}
+
+
+
+/*UPDATE*/
+
+.contact-area{
+
+	height: 120vh;
+	background-image: url(sec_contact11.jpg);
+	background-position: cover cover;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.form form{
+
+	height: 70%;
+	width: 100%;
+	background-image: linear-gradient(#ad665e, #ac9f9f);
+	border-radius: 15px 0 0 8px;
+
+
+}
+@media screen and (max-width: 768px){
+
+	.contact-area{
+		height: 140vh;
+	}
+	.form{
+		height: 60%;
+	}
+
+	.contact-area{background-image: none;}
+
+	.bg-img{
+		height: 40%;
+		background-image: url(sec_contact12.jpg);
+		background-position: cover cover;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+
+
+	.form form{
+
+		height: 100%;
+		width: 100%;
+		border-radius: 0;
+	}
+}
+.card-header{
+	background-size: 40px;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.mail{background-image: url(mail.png);}
+.insta{background-image: url(insta.png);}
+.youtube{background-image: url(youtube.png);}
+.whatsapp{background-image: url(whatsapp.png);}
