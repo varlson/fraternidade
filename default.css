@@ -92,7 +92,7 @@ header,.navbar{
 }
 
 .um{background-image: url(welcome.jpg);}
-.dois{background-image: url(img1.jpg);}
+.dois{background-image: url(fale_com_agente.jpg);}
 
 @media screen and (max-width: 500px) {
 	.carousel-caption h3{

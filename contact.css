@@ -5,14 +5,7 @@
 
 
 
-@media screen and (max-width: 575px){
 
-	.form_contact{
-
-		height: auto;
-		width: 100%;
-	}
-}
 
 
 
@@ -47,7 +40,7 @@ input[type=submit] {
 
 .contact-area{
 
-	height: 120vh;
+	height: 90vh;
 	background-image: url(sec_contact11.jpg);
 	background-position: cover cover;
 	background-size: 100% 100%;
@@ -81,6 +74,7 @@ input[type=submit] {
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 	}
+	
 
 
 	.form form{
@@ -90,6 +84,19 @@ input[type=submit] {
 		border-radius: 0;
 	}
 }
+
+
+@media screen and (max-width: 500px){
+
+	.contact-area{
+		height: 120vh;
+	}
+	.bg-img{
+		height: 30%;
+	}
+}
+
+form .form-group{margin-bottom: 0 !important;}
 .card-header{
 	background-size: 40px;
 	background-repeat: no-repeat;
@@ -100,3 +107,9 @@ input[type=submit] {
 .insta{background-image: url(insta.png);}
 .youtube{background-image: url(youtube.png);}
 .whatsapp{background-image: url(whatsapp.png);}
+
+.col-md-8 form{
+	
+	display: grid;
+	align-content: space-between;
+}
