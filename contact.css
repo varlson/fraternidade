@@ -1,115 +1,38 @@
-/*IMG CONTACT*/
+.cover-img{
 
-
-
-
-
-
-
-
-
-
-/*SMS-FORM*/
-
-input, textarea{
-
-	width: 100%;
-	padding: 12px;
-	background-color:#6fc6ea;
-}
-
-
-
-input[type=submit] {
-	background-color: #4CAF50;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-
-/*BACKGROUNDS*/
-.bg-grey{background-color: #c4c4c4;}
-.bg_grad{background-color: #ac9f9f;}
-
-
-
-/*UPDATE*/
-
-.contact-area{
-
-	height: 90vh;
-	background-image: url(sec_contact11.jpg);
-	background-position: cover cover;
+	background-image: url(sec_contact12.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
 	background-size: 100% 100%;
-	background-repeat: no-repeat;
 }
 
-.form form{
+.mycard{
 
-	height: 70%;
-	width: 100%;
-	background-image: linear-gradient(#ad665e, #ac9f9f);
-	border-radius: 15px 0 0 8px;
-
+	padding: 60px;
+	border-radius: 20px 0 0 20px;
+}
+.formulario{
+	background-color: blue;
 
 }
-@media screen and (max-width: 768px){
 
-	.contact-area{
-		height: 140vh;
-	}
-	.form{
-		height: 60%;
-	}
+.form-alt{
+	display: none;
+}
 
-	.contact-area{background-image: none;}
-
-	.bg-img{
-		height: 40%;
-		background-image: url(sec_contact12.jpg);
-		background-position: cover cover;
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-	}
-	
-
-
-	.form form{
-
-		height: 100%;
-		width: 100%;
-		border-radius: 0;
+@media only screen and (max-width: 768px){
+	.mycard{
+		padding: 0px;
+		margin: 0px;
 	}
 }
 
-
-@media screen and (max-width: 500px){
-
-	.contact-area{
-		height: 120vh;
+@media only screen and (max-width: 600px){
+	.form-alt{
+		display: block;
 	}
-	.bg-img{
-		height: 30%;
+
+	.form-norm{
+		display: none;
 	}
-}
-
-form .form-group{margin-bottom: 0 !important;}
-.card-header{
-	background-size: 40px;
-	background-repeat: no-repeat;
-	background-position: left;
-}
-
-.mail{background-image: url(mail.png);}
-.insta{background-image: url(insta.png);}
-.youtube{background-image: url(youtube.png);}
-.whatsapp{background-image: url(whatsapp.png);}
-
-.col-md-8 form{
-	
-	display: grid;
-	align-content: space-between;
 }

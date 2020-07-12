@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>FRATERNIDADE</title>
+	<title>Inicio - Frat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -12,29 +12,28 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-	<div class="container-fluid p-0 bg-gradiant-grey">
+	<div class="container-fluid bg-gradiant-grey pb-1">
 
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark pt-0 fixed-top">
-				<div class="container borda bg_dark_light px-3">
-					<a href="#" class="navbar-brand">
-						<img src="logo1.png" height="50" width="100" alt="" class="">
-						<span>FRATERNIDADE</span>
-					</a>
+			<nav class="navbar navbar-expand-lg navbar-dark pt-0 mb-4 fixed-top">
 
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItem">
+				<div class="container borda bg_dark_light p-2">
+					<a href="#" class="navbar-brand "></a>
+
+					<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navItem">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 
 					<div class="navbar-collapse collapse" id="navItem">
 						<div class="navbar-nav ml-auto">
-							<a href="index.html" class="nav-item nav-link nav-item-size home mr-5" >Home</a>
-							<a href="about.html" class="nav-item nav-link nav-item-size about mr-5">About</a>
-							<a href="contact.html" class="nav-item nav-link nav-item-size contact mr-5">Contact</a>
-							<a href="" class="nav-item nav-link nav-item-size donate mr-5">Donate</a>
+							<a href="index.html" class="nav-item nav-link nav-item-size home mr-5" >Início</a>
+							<a href="about.html" class="nav-item nav-link nav-item-size about mr-5">Sobre</a>
+							<a href="contact.html" class="nav-item nav-link nav-item-size contact mr-5">Contacto</a>
+							<a href="" class="nav-item nav-link nav-item-size donate mr-5">Doe</a>
 						</div>
 					</div>
 				</div>
+
 			</nav>
 		</header>
 
@@ -45,14 +44,16 @@
 					<div class="carousel-inner text-center">
 
 						<div class="carousel-item active">
-							<div class="img_slide um d-flex h-100 align-items-end justify-content-center">
-								<a class="sms text-left p-2" href="#">Veja mais detalhes sobre essa Organização</a>
+							<div class="img_slide um d-flex h-100 justify-content-center">
+								<a class="sms text-left p-2 align-self-end d-flex align-items-end" href="#">Veja mais detalhes sobre essa Organização</a>
 							</div>
 						</div>
 
+
+
 						<div class="carousel-item">
-							<div class="img_slide dois d-flex h-100 align-items-end justify-content-center">
-								<a class="sms text-left p-2" href="contact.html">Fale conosco clicando aqui e nos coonheça melhor.</a>
+							<div class="img_slide dois d-flex h-100 justify-content-center">
+								<a class="sms text-left p-2 align-self-end d-flex align-items-end" href="contact.html">Fale conosco clicando aqui e nos coonheça melhor.</a>
 							</div>
 						</div>
 					</div>
@@ -71,21 +72,22 @@
 				</div>
 			</div>
 		</main>
-	</div>
 
-	<div class="container-fluid bg_dark_teste">
-		<div class="container bg_dark_teste pt-3">
+	</div> 	<!--  FIM DE CANTAINER FLUID HEADER-->
 
-			<div class="row bg_dark_red text-light">
-				<div class="col-md-8 h3">Notícias</div>
-				<div class="col-md-4 h3 text-center d-none d-md-block">Projetos e Iniciaivas</div>
+	<div class="container-fluid bg_dark_test">
+
+		<div class="container">
+			<div class="row text-light ">
+				<div class="col-md-9 h3 bg-info">Notícias</div>
+				<div class="col-md-3 h3 bg_blue_light text-center d-none d-md-block">Projetos e Iniciaivas</div>
 			</div>
 
 			<div class="row p-0 m-0">
-				<div class="col-md-8 bg_blue_light p-2">
+				<div class="col-md-9 bg_dark_transparent p-2">
 					<!--<h3 class="text-right">Últimos Posts</h3>-->
 
-					<div class="row">
+					<div class="row my-2">
 
 						<div class="col-md-6 col-sm-12 text-center ">
 							<div class="card">
@@ -98,9 +100,10 @@
 									</div>
 								</div>
 
-								<div class="card-body d-flex justify-content-end pt-0 pb-0">
-									<a href="#" class="btn btn-primary ">Ver Mais</a>
-								</div>
+								<a href="" class="row card-footer d-flex  pt-1 pb-0">
+									<div class=" col-md-6 text-secondary justify-self-start muted text-left">25/06/2019</div>
+									<div class=" col-md-6 btn btn-primary justify-self-start">Ver Mais</div>
+								</a>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-12 text-center">
@@ -113,15 +116,16 @@
 
 								</div>
 
-								<div class="card-body d-flex justify-content-end pt-0 pb-0">
-									<a href="#" class="btn btn-primary ">Ver Mais</a>
-								</div>
+								<a href="" class="row card-footer d-flex  pt-1 pb-0">
+									<div class=" col-md-6 text-secondary justify-self-start muted text-left">25/06/2019</div>
+									<div class=" col-md-6 btn btn-primary justify-self-start">Ver Mais</div>
+								</a>
 							</div>
 						</div>
 					</div>
 
 
-					<div class="row">
+					<div class="row my-2">
 
 						<div class="col-md-6 col-sm-12 text-center">
 							<div class="card">
@@ -134,9 +138,10 @@
 									</div>
 								</div>
 
-								<div class="card-body d-flex justify-content-end pt-0 pb-0">
-									<a href="#" class="btn btn-primary ">Ver Mais</a>
-								</div>
+								<a href="" class="row card-footer d-flex  pt-1 pb-0">
+									<div class=" col-md-6 text-secondary justify-self-start muted text-left">25/06/2019</div>
+									<div class=" col-md-6 btn btn-primary justify-self-start">Ver Mais</div>
+								</a>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-12 text-center">
@@ -149,14 +154,15 @@
 
 								</div>
 
-								<div class="card-body d-flex justify-content-end pt-0 pb-0">
-									<a href="#" class="btn btn-primary ">Ver Mais</a>
-								</div>
+								<a href="" class="row card-footer d-flex  pt-1 pb-0">
+									<div class=" col-md-6 text-secondary justify-self-start muted text-left">25/06/2019</div>
+									<div class=" col-md-6 btn btn-primary justify-self-start">Ver Mais</div>
+								</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="row">
+					<div class="row my-2">
 
 						<div class="col-md-6 col-sm-12 text-center">Posts3</div>
 						<div class="col-md-6 col-sm-12 text-center">Posts4</div>
@@ -164,12 +170,9 @@
 				</div>
 
 				<div class="col-12 bg_dark_red  h3 text-center text-light p-1 d-md-none">Projetos e Iniciaivas</div>
-				<div class="col-md-4">
-					<div class="row">
-						
-					</div>
-					<div class="row">
-						<div class="col-12">
+				<div class="col-md-3 p-0 m-0">
+					<div class="row ">
+						<div class="col-12 p-0 m-0">
 							<ul class="list-group">
 								<li class="li list-group-item mr-auto ttt">
 									<button  class="btn btn-info px-5 " data-toggle="collapse" data-target="#info-ativ" aria-expanded="false" aria-controls="info-ativ">
@@ -201,14 +204,14 @@
 						</div>
 						<div class="row mt-5">
 
-							<div class="col-12 ">
-								<a href="#" class="btn btn-secondary  cronograma">Galeria</a>
+							<div class="col-12 p-1 m-0">
+								<a href="#" class=" btn btn-secondary  cronograma">Galeria</a>
 
 								<div class="carousel slide" id="galeria" data-ride="carousel">
 
-									<div class="carousel-inner">
+									<div class="carousel-inner rounded-1">
 										<div class="carousel-item active">
-											<img src="img1.jpg" alt="" class="d-block img-fluid">
+											<img src="img1.jpg" alt="" class="d-block  img-fluid">
 										</div>
 
 										<div class="carousel-item ">
@@ -222,48 +225,54 @@
 				</div>
 
 			</div>
-		</div>
-		<div class="container-fluid  p-0 m-0 bg_dark footer">	
-			<div class="container p-4  ">
-				<footer>
-					<div class="row">
-						<div class="col-md-4 d-flex align-items-end justify-content-center py-3">
-							<div class="logo-footer">
-								FRATERNIDADE
-							</div>
-						</div>
 
-						<div class="col-md-4 d-flex  justify-content-center py-3">
-							<div class="addres d-flex ">
-								<div class="card">
-									<img src="adress.png"  alt="" class="card-img-top p-0">
-									<div class="card-body">
-										<p class="font-weight-bold p-0">Organizaçõ Fratenidade</p>
-										<p>Raua: xxxxxxx-xxxxx<br> Bissua - Guiné-Bissau<br> Tel: +245 xx xxx-xxxx</p>
-									</div>
+		</div>
+
+	</div> <!-- FIM DO CONTAINER DO MAIN -->
+
+	<!-- COMEÇO DO FOOTER -->
+
+	<div class="container-fluid  p-0 m-0 bg_dark footer">	
+		<div class="container p-4  ">
+			<footer>
+				<div class="row">
+					<div class="col-md-4 d-flex align-items-end justify-content-center py-3">
+						<div class="logo-footer">
+							FRATERNIDADE
+						</div>
+					</div>
+
+					<div class="col-md-4 d-flex local  justify-content-center py-3">
+						<div class="addres d-flex ">
+							<div class="card">
+								<img src="adress.png"  alt="" class="card-img-top p-0">
+								<div class="card-body">
+									<p class="font-weight-bold p-0">Endereço da Organização</p>
+									<p>Rua: xxxxxxx-xxxxx<br> Bissua - Guiné-Bissau<br> Tel: +245 955598087 / +245 9669633 </p>
 								</div>
 							</div>
 						</div>
-
-
-						<div class="col-md-4 d-flex align-items-center justify-content-center py-3">
-							<ul class="list-group social list-group-horizontal">
-								<a href="contact.html" class="list-group-item mr-1 facebook "></a>
-								<a href="#manito" class="list-group-item mr-1 insta"></a>
-								<a href="contact.html" class="list-group-item mr-1 youtube"></a>
-								<a href="contact.html" class="list-group-item mr-1 whatsapp"></a>
-
-							</ul>
-						</div>
 					</div>
-				</footer>
-			</div>
-			<div class="row">
-				<div class="col-12  text-center dev-own">
-					<div class="h5 text-light ">&copy Varlson Dev</div>
+
+
+					<div class="col-md-4 d-flex align-items-center justify-content-center py-3">
+						<ul class="list-group social list-group-horizontal">
+							<a href="contact.html" class="list-group-item mr-1 facebook "></a>
+							<a href="https://www.instagram.com/ongfraternidade/" target="blanck" class="list-group-item mr-1 insta"></a>
+							<a href="contact.html" class="list-group-item mr-1 youtube"></a>
+							<a href="contact.html" class="list-group-item mr-1 whatsapp"></a>
+
+						</ul>
+					</div>
 				</div>
+			</footer>
+		</div>
+		<div class="row">
+			<div class="col-12  text-center dev-own">
+				<div class="h5 text-light ">&copy Varlson Dev</div>
 			</div>
-		</div>		
-	</body>
-	</html>
+		</div>
+	</div>	
+</body>
+</html>
 
