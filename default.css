@@ -1,6 +1,6 @@
 /*GERAL*/
 body{
-	font-family: 'Roboto', 'sans-serif'
+	font-family: 'Roboto', sans-;
 }
 
 a{color: white;}
@@ -51,7 +51,7 @@ header,.navbar{
 	background-image: url(logo1.png);
 	background-repeat: no-repeat;
 	background-position: center top;
-	background-size: 100% 100%;
+	background-size: 120px 100%;
 }
 
 
@@ -113,6 +113,7 @@ header,.navbar{
 .um{background-image: url(welcome.jpg);}
 .dois{background-image: url(fale_com_agente.jpg);}
 
+/*MEDIA QUERYS*/
 @media screen and (max-width: 500px) {
 	.carousel-caption h3{
 		font-size: 1rem;
@@ -170,144 +171,165 @@ header,.navbar{
 	}
 }
 
-
-.carousel-control-prev,.carousel-control-next{
-	width: 100px;
-	height: 100px;
-	top: calc(50% - 25px);
+.alt{
+	display: none;
 }
 
+@media only screen and (max-width: 992px){
 
-.carousel-control-prev{
-	border-radius: 0 10px 10px 0;
-}
-.carousel-control-next{
-	border-radius: 10px 0 0 10px;
-}
+	.alt{
+		display: block;
+	}
 
-.carousel-control-prev:hover,.carousel-control-next:hover{
-	background-color: rgba(80, 92, 98, .8);
-}
+	.navbar-brand{
 
+		width: 100%;
+		display: grid;
+		justify-content: center;
+		height: 80px;
+		background-size: 140px 100%;
+	}
 
-
-/*CARD */
-.card img{
-
-	height: 191.23px;
-}
+	}			/*  FIM DE MEDIA SQUERYS*/
 
 
-/*ATIVIDADES*/
+	.carousel-control-prev,.carousel-control-next{
+		width: 100px;
+		height: 100px;
+		top: calc(50% - 25px);
+	}
 
 
-.list-group-item{
+	.carousel-control-prev{
+		border-radius: 0 10px 10px 0;
+	}
+	.carousel-control-next{
+		border-radius: 10px 0 0 10px;
+	}
 
-	text-align: center;
-	width: 100%;
-} 
-
-.atividades .list-group-item {
-	font-size: 1.5rem;
-	padding: 4px;
-}
-
-.atividades .list-group-item a:hover{
-	text-decoration: none;
-	color: #dadee0;
-}
-
-
-.tteste{
-	padding: 0;
-}
-.cronograma {
-
-	width: 100%;
-	border-radius: 10px 10px 0 0;
-}
-
-/*END OF ATIVIDADES*/
-
-/*FOOTER*/
-
-
-.logo-footer{
-
-	height: 160px;
-	width: 150px;
-	display: grid;
-	align-items: end;
-	background-image: url(logo.jpg);
-	background-position: cover;
-	background-size: 100% 80%;
-	background-repeat: no-repeat;
-	font-size: 1.2rem;
-	color: white;
-	text-shadow: 2px 2px 1px blue;
-}
+	.carousel-control-prev:hover,.carousel-control-next:hover{
+		background-color: rgba(80, 92, 98, .8);
+	}
 
 
 
-.addres .card img{
+	/*CARD */
+	.card img{
 
-	height: 40px;
-	width: 40px;
-}
-
-.container-fluid{
-
-	padding: 0;
-}
+		height: 191.23px;
+	}
 
 
-.social a{
+	/*ATIVIDADES*/
 
-	height: 35px;
-	width: 35px;
-	/*background-color:red;*/
-	background-repeat: no-repeat;
-	background-size: 90%;
-	background-position: 90%;
-	background-color: rgba(69, 79, 84, 1);
-}
 
-.social a:hover{
-	background-color: rgba(113, 122, 128, .5);
-}
+	.list-group-item{
 
-.local{
-	font-size: .9rem;
-}
-.addres .card .card-body {
-	padding: 6px;
-}
+		text-align: center;
+		width: 100%;
+	} 
 
-.facebook{background-image: url(face.png);}
-.insta{background-image: url(insta.png);}
-.youtube{background-image: url(youtube.png);}
-.whatsapp{background-image: url(whatsapp.png);}
+	.atividades .list-group-item {
+		font-size: 1.5rem;
+		padding: 4px;
+	}
+
+	.atividades .list-group-item a:hover{
+		text-decoration: none;
+		color: #dadee0;
+	}
+
+
+	.tteste{
+		padding: 0;
+	}
+	.cronograma {
+
+		width: 100%;
+		border-radius: 10px 10px 0 0;
+	}
+
+	/*END OF ATIVIDADES*/
+
+	/*FOOTER*/
+
+
+	.logo-footer{
+
+		height: 160px;
+		width: 150px;
+		display: grid;
+		align-items: end;
+		background-image: url(logo.jpg);
+		background-position: cover;
+		background-size: 100% 80%;
+		background-repeat: no-repeat;
+		font-size: 1.2rem;
+		color: white;
+		text-shadow: 2px 2px 1px blue;
+	}
+
+
+
+	.addres .card img{
+
+		height: 40px;
+		width: 40px;
+	}
+
+	.container-fluid{
+
+		padding: 0;
+	}
+
+
+	.social a{
+
+		height: 35px;
+		width: 35px;
+		/*background-color:red;*/
+		background-repeat: no-repeat;
+		background-size: 90%;
+		background-position: 90%;
+		background-color: rgba(69, 79, 84, 1);
+	}
+
+	.social a:hover{
+		background-color: rgba(113, 122, 128, .5);
+	}
+
+	.local{
+		font-size: .9rem;
+	}
+	.addres .card .card-body {
+		padding: 6px;
+	}
+
+	.facebook{background-image: url(face.png);}
+	.insta{background-image: url(insta.png);}
+	.youtube{background-image: url(youtube.png);}
+	.whatsapp{background-image: url(whatsapp.png);}
 
 	/*BOOTSTRAP CLASSES PERSONALIZED*/
-.btn-grad {
-  color:  #cc3300;
-  border-color: #fff;
-}
+	.btn-grad {
+		color:  #cc3300;
+		border-color: #fff;
+	}
 
-.btn-grad:hover {
-  color: #000;
-  background: linear-gradient(to bottom, #f7f7f7 14%,#ea5d5d 52%,#ffffff 85%);
-  border-color: #fff;
-}
+	.btn-grad:hover {
+		color: #000;
+		background: linear-gradient(to bottom, #f7f7f7 14%,#ea5d5d 52%,#ffffff 85%);
+		border-color: #fff;
+	}
 
 
-.btn-yout{
-  color: #000;
-  border-color: #cc3300;
-}
+	.btn-yout{
+		color: #000;
+		border-color: #cc3300;
+	}
 
-.btn-yout:hover {
-  color: #000;
-  background:  #992600;
-  border-color: #000;
-}
+	.btn-yout:hover {
+		color: #000;
+		background:  #992600;
+		border-color: #000;
+	}
