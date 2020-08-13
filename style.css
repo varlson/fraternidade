@@ -1,87 +1,64 @@
-		/*ABOUT-PAGE*/
+:root{
+	--azul-logo: rgb(50, 117, 168);
+	--amarelo-logo: rgb(143, 143, 49);
+	--preto-logo: rgb(88, 90, 92);
+	--vermelho-logo: rgb(199, 119, 113);
+	--branco-logo: rgb(237, 245, 243);
+}
+
+:root{
+	--bgt-logo-azul: rgba(50, 117, 168,.5);
+	--bgt-logo-amarelo: rgba(143, 143, 49,.5);
+	--bgt-logo-preto: rgba(88,90,92,.5);
+	--bgt-logo-vermelho: rgba(199, 119, 113,.5);
+	--bgt-logo-branco: rgba(237, 245, 243,.5);
+}
 
 
-		.navbar{
-			padding: 0; 
-		}
-		.navbar-brand, .collapse{
-
-			margin: .5rem;
-		}
-
-
-		.carousel-item {
-
-			height: 100%; 	
-		}
-		section .list-group-item{
-
-			font-size: 1.1rem;
-		}
-		/*ROW SOBRE E IMG-LOGO*/
-
-		.img_sobre{
-
-			height: 120px;
-			width: 120px;
-			background-image: url(logo.jpg);
-			background-size: 100%;
-			background-position: 100%;
-			background-repeat: no-repeat;
-		}
+		/*BACKGROUND COLORS*/
+.bg-logo-amarelo{background-color: var(--amarelo-logo);}
+.bg-logo-azul{background-color: var(--azul-logo);}
+.bg-logo-branco{background-color: var(--branco-logo);}
+.bg-logo-preto{background-color: var(--preto-logo);}
+.bg-logo-vermelho{background-color: var(--vermelho-logo);}
 
 
+		/*BACKGROUND COLORS transparentes*/
+.bgt-logo-azul{background-color: var(--bgt-logo-azul);}
+.bgt-logo-preto{background-color: var(--bgt-logo-preto);}
+.bgt-logo-amarelo{background-color: var(--bgt-logo-amarelo);}
+.bgt-logo-vermelho{background-color: var(--bgt-logo-vermelho);}
+.bgt-logo-branco{background-color: var(--bgt-logo-branco);}
+.bgt-trans{background-color: transparent;}
 
-		.menu-alternativo{
+		/*CORES DOS TEXTOS*/
+.text-logo-azul{color: var(--azul-logo);}
+.text-logo-preto{color: var(--preto-logo);}
+.text-logo-branco{color: var(--branco-logo);}
+.text-logo-vermelho{color: var(--vermelho-logo);}
+.text-logo-amarelo{color: var(--amarelo-logo);}
 
-			display: none;
-		}
 
+		/*ANIMAÇAO DO SCROLL*/
 
-		@media only screen and (max-width: 767px) {
-			.menu-alternativo {
-				display: block;
-			}
+[data-anima]{
+	opacity: 0;
+	transition: .8s;
+}
 
-			.text_sobre{
+[data-anima="left"]{
+	transform: translate3d(-40px, 0, 0);
+}
 
-				font-size: 2rem;
-			}
+[data-anima="right"]{
+	transform: translate3d(40px, 0, 0);
+}
 
-			.logo-sobre{
-				display: flex;
-				justify-content: center;
-			}
-		}
+[data-anima="centro"]{
+	transform: translate3d(0, -40px, 0);
+}
 
-		/*DIREÇÃO DE ORGANOZAÇÃO*/
-
-		.profile-img{
-
-			height: 150px;
-			width: 150px;
-
-			border-radius: 30px;
-			margin: 0 auto;
-			background-position: 100%;
-			background-repeat: no-repeat;
-			background-size: 100%;
-		}
-
-		.estrutura{text-align: center;}
-
-		.presi{background-image: url(prim.jpg);}
-		.presi1{background-image: url(segun.jpg);}
-		.presi2{background-image: url(ter.jpg);}
-
-		.cronograma {
-
-			width: 100%;
-			border-radius: 10px 10px 0 0;
-		}
-
-						/*CONTACTOS*/
-.contactos{
-
-	font-size: .5rem;
+[data-anima].animate{
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
 }
