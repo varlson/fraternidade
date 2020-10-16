@@ -15,7 +15,7 @@
 }
 
 
-		/*BACKGROUND COLORS*/
+/*BACKGROUND COLORS*/
 .bg-logo-amarelo{background-color: var(--amarelo-logo);}
 .bg-logo-azul{background-color: var(--azul-logo);}
 .bg-logo-branco{background-color: var(--branco-logo);}
@@ -23,7 +23,7 @@
 .bg-logo-vermelho{background-color: var(--vermelho-logo);}
 
 
-		/*BACKGROUND COLORS transparentes*/
+/*BACKGROUND COLORS transparentes*/
 .bgt-logo-azul{background-color: var(--bgt-logo-azul);}
 .bgt-logo-preto{background-color: var(--bgt-logo-preto);}
 .bgt-logo-amarelo{background-color: var(--bgt-logo-amarelo);}
@@ -31,7 +31,7 @@
 .bgt-logo-branco{background-color: var(--bgt-logo-branco);}
 .bgt-trans{background-color: transparent;}
 
-		/*CORES DOS TEXTOS*/
+/*CORES DOS TEXTOS*/
 .text-logo-azul{color: var(--azul-logo);}
 .text-logo-preto{color: var(--preto-logo);}
 .text-logo-branco{color: var(--branco-logo);}
@@ -39,9 +39,9 @@
 .text-logo-amarelo{color: var(--amarelo-logo);}
 
 
-		/*ANIMAÇAO DO SCROLL*/
+/*ANIMAÇAO DO SCROLL*/
 
-[data-anima]{
+/*[data-anima]{
 	opacity: 0;
 	transition: .8s;
 }
@@ -61,4 +61,80 @@
 [data-anima].animate{
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
-}
+	}*/
+
+
+	/*ANIMAÇÃO ALTERNATIVA*/
+	.animation-left{
+
+		opacity: 0;
+		transform: translate3d(-50px, 0,0);
+		transition: .5s;
+	}
+
+
+	.animation-right{
+
+		opacity: 0;
+		transform: translate3d(50px, 0,0);
+		transition: .5s;
+	}
+
+	.animation-center{
+
+		opacity: 0;
+		transform: translate3d(0, -50px,0);
+		transition: .5s;
+	}
+
+	.animation-start{
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+
+
+	/*CARD PERSONALIZATION*/
+
+	.inside{
+		position: relative;
+		cursor: pointer;
+	}
+	.desc{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		text-align: center;
+		/*font-size: .8rem;*/
+
+	}
+
+	.desc .h6{
+		background-color: rgba(80, 82, 87,.4);
+		padding: 5px;
+		border-radius: 20px;
+	}
+	.min-desc{
+		display: none;
+		text-align: center;
+	}
+
+	.inside:hover img{
+		filter: blur(2px);
+		transition: all .2s;
+	}
+
+	.inside img{
+		border-radius: 15px;
+		
+	}
+
+	.inside:hover .min-desc{
+		display: block;
+		background-color: rgba(0,0,0,.2);
+		border-radius: 15px;
+		padding: 5px 20px;
+		transition: all .2s;
+
+	}

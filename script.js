@@ -5,15 +5,15 @@ var imagens = [1,2,3,4, 'img1', 'img2', 'img3', 'img4',2];
 
 
 
-if(element.length){
-	window.addEventListener('scroll', ()=>{
-		animaScroll();
-	});
+// if(element.length){
+// 	window.addEventListener('scroll', ()=>{
+// 		animaScroll();
+// 	});
 
-	window.addEventListener('load', ()=>{
-		animaScroll();
-	});
-}
+// 	window.addEventListener('load', ()=>{
+// 		animaScroll();
+// 	});
+// }
 
 
 /*LYOUT AND FILES LOADER*/
@@ -83,7 +83,7 @@ class layoutContent{
 
 
 window.addEventListener('load', ()=>{;
-	animaScroll();
+	// animaScroll();
 	owlCarouseLoader();
 	galleryLoader();
 
@@ -92,3 +92,34 @@ window.addEventListener('load', ()=>{;
 	/*LAYOUT*/
 
 })
+
+
+
+
+			/*ANIMAÇÃO ALTERNATIVA*/
+
+
+
+var $target = $(' * [class *="animation-"]'),
+	animationClass = 'animation-start',
+	offset = $(window).height() * (3/4);
+
+function animar(){
+	var topoDocumento = $(document).scrollTop();
+	
+	$target.each(function(){
+		var itemtopo = $(this).offset().top;
+
+		if(topoDocumento > itemtopo -offset){
+			$(this).addClass(animationClass);
+		}else{
+			$(this).removeClass(animationClass);
+		}
+	})
+}
+
+animar();
+
+$(document).scroll(function (){
+	animar();
+})	
